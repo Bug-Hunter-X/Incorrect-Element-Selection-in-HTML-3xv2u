@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+  <script>
+    //Correct way to select the element. The getElementById should be used to select the element with specific id.
+    let divElement = document.getElementById('myDiv'); 
+    divElement.style.display = 'none'; //This will hide only the div with id="myDiv"
+  </script>
+</body>
+</html>
